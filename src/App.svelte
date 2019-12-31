@@ -1,9 +1,11 @@
 <script>
 	export let name;
-	export let desc;
+	export let desc; 
+	import LogoImg from './component/LogoImg.svelte';
 </script>
 
-<main>
+<main> 
+	<LogoImg/>
 	<h1>Hello {name}!</h1>
 	<h2>{desc}</h2>
 	<p>Visit the <a target="_blank" href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
@@ -21,6 +23,7 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+		margin: 0;
 	}
 
 	@media (min-width: 640px) {
